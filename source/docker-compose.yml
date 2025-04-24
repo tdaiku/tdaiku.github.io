@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  app:
+    image: node:12.16.3
+    working_dir: /src
+    tty: true
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/src
+    command: >
+      bash

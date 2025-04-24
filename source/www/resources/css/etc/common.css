@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  display: block;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+iframe[name="google_conversion_frame"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.disp-none {
+  display: none;
+}
+
+#container {
+  position: relative;
+  z-index: 100;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+}
+
+.to-top-btn {
+  @mixin setBtnImg "common/to_top_btn.png";
+
+  position: absolute;
+  bottom: 95px;
+  right: 30px;
+}
+
+@media screen and (min-width: 641px) {
+  .to-top-btn {
+    &:hover {
+      background-position: 0 bottom;
+    }
+  }
+
+  a {
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 640px;
+  }
+
+  .to-top-btn {
+    @mixin setImgProperty "sp/common/to_top_btn.png";
+
+    bottom: 108px;
+    right: 16px;
+  }
+}
+
+section {
+  position: relative;
+}

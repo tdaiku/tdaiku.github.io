@@ -1,0 +1,34 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NPMTHWT');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=<%= htmlWebpackPlugin.options.viewport %>">
+<meta name="Keywords" content="<%= htmlWebpackPlugin.options.cn_keywords %>" />
+<meta name="description" content="<%= htmlWebpackPlugin.options.cn_description %>">
+<title><%= htmlWebpackPlugin.options.en_title %></title>
+
+<link rel="icon" href="/resources/img/favicon.ico" type="image/vnd.microsoft.icon">
+
+<meta property="og:title" content="<%= htmlWebpackPlugin.options.en_title %>"/>
+<meta property="og:description" content="<%= htmlWebpackPlugin.options.cn_description %>"/>
+<meta property="og:type" content="website">
+<meta property="og:url" content="<%= htmlWebpackPlugin.options.cn_url %>"/>
+<meta property="og:image" content="<%= htmlWebpackPlugin.options.ogImage %>"/>
+<meta property="og:site_name" content="<%= htmlWebpackPlugin.options.en_title %>"/>
+
+<meta name="twitter:site" content="<%= htmlWebpackPlugin.options.en_twitter %>">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="<%= htmlWebpackPlugin.options.cn_description %>">
+<meta name="twitter:image:src" content="<%= htmlWebpackPlugin.options.ogImage %>">
+
+<% if (htmlWebpackPlugin.options.alternate) { %>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="<%= htmlWebpackPlugin.options.alternate %>" />
+<% } %>
+<% if (htmlWebpackPlugin.options.canonical) { %>
+<link rel="canonical" href="<%= htmlWebpackPlugin.options.canonical %>" />
+<% } %>
