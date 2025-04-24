@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>みらいキッズ - 放課後等デイサービス</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
     <style>
       body {
         font-family: sans-serif;
@@ -57,8 +73,10 @@
 <body>
 
 <h1>放課後等デイサービス みらいキッズ</h1>
-
-<p>みらいキッズは、こどもたちとそのご家族、地域に寄り添った丁寧な支援を行うことを基本理念とした放課後等デイサービスです。
+<div>
+    <img src="./resources/logo.png" alt="みらいキッズのロゴ" style="width: 100px; height: auto;">
+</div>
+<p><a href="#day">みらいキッズ</a>は、こどもたちとそのご家族、地域に寄り添った丁寧な支援を行うことを基本理念とした放課後等デイサービスです。
     こどもたちの「つながり」や「学び合い」を大切にしながら、「頑張ってよかった！」と感じられる経験がたくさんできるような支援を心がけています。</p>
 
 <h2>ご利用案内</h2>
@@ -97,7 +115,7 @@
 <h2>みらいキッズで大切にしていること</h2>
 <p>（ここに「みらいキッズで大切にしていること」に関する情報があれば記述します。元のテキストには具体的な記述がありませんでした。）</p>
 
-<h2>みらいキッズの１日</h2>
+<h2 id="day">みらいキッズの１日</h2>
 
 <div class="daily-schedule">
     <table>
