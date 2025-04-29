@@ -41,8 +41,6 @@ iframe[name="google_conversion_frame"] {
 }
 
 .to-top-btn {
-  @mixin setBtnImg "common/to_top_btn.png";
-
   position: absolute;
   bottom: 95px;
   right: 30px;
@@ -70,8 +68,6 @@ iframe[name="google_conversion_frame"] {
   }
 
   .to-top-btn {
-    @mixin setImgProperty "sp/common/to_top_btn.png";
-
     bottom: 108px;
     right: 16px;
   }

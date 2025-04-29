@@ -12,8 +12,5 @@ $(() => {
     top.load();
 
     $(window).on('resize', () => {
-        setTimeout(() => {
-            top.initPlaygroundBg();
-        }, 200);
     });
 });

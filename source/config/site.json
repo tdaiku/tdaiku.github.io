@@ -1,30 +1,18 @@
 {
   "meta": {
-    "url": "https://whysoserious.jp/",
-    "title": "Why so serious, Inc.（ワイソーシリアス）",
-    "keywords": "ワイソーシリアス,インディーゲーム,ゲーム開発,WSS playground,NEEDY GIRL OVERDOSE",
-    "description": "ワイソーシリアスはゲームの販売・開発、webメディア・生放送番組の運営、イベントの企画立案を行い、「個人」のゲーム製作者のクリエイティブを最大化することをテーマとする会社です。",
-    "ogImage": "https://whysoserious.jp/resources/img/ogp.jpg",
-    "twitter": "@infowssJP",
-    "shareText": "Why so serious, Inc.\n",
+    "url": "https://miraie-npo.com",
+    "title": "みらいキッズ - 放課後等デイサービス",
+    "description": "みらいキッズ - 放課後等デイサービス",
+    "ogImage": "https://miraie-npo.com/resources/img/ogp.jpg",
+    "twitter": "",
+    "shareText": "",
     "hashtags": "",
     "viewport": 640
   },
   "variables": {
-    "en_url": "https://whysoserious.jp/en/",
-    "en_title": "Why so serious, Inc.",
-    "en_keywords": "Why so serious,Indie Games,Game development,WSS playground,NEEDY GIRL OVERDOSE",
-    "en_description": "Why so serious is a company that focuses on handling game sales and development, web media and live broadcasting programs, and event planning to maximize the creativity of \"individual\" game creators.",
-    "en_twitter": "@infowss",
-
-    "cn_url": "https://whysoserious.jp/cn/",
-    "cn_keywords": "Why so serious,独立游戏,游戏开发,WSS playground,NEEDY GIRL OVERDOSE",
-    "cn_description": "株式会社Why so serious致力于将“个人”游戏制作者的创造性最大化，业务内容涵盖销售·开发游戏，运营web媒体·直播节目，企划立案活动等。"
   },
   "scripts": {
-    "top": "./resources/js/top.js",
-    "top_en": "./resources/js/top_en.js",
-    "top_cn": "./resources/js/top_cn.js"
+    "top": "./resources/js/top.js"
   },
   "pages": [
     {
@@ -40,43 +28,6 @@
         "language": "",
         "trackingId": "wss_top"
       }
-    },
-    {
-      "template": "template/en/index.ejs",
-      "filename": "en/index.html",
-      "chunks": [
-        "top_en"
-      ],
-      "rootPath": "/en/",
-      "variables": {
-        "canonical": "https://whysoserious.jp/en/",
-        "path": "..",
-        "language": "en",
-        "trackingId": "wss_top_en"
-      }
-    },
-    {
-      "template": "template/cn/index.ejs",
-      "filename": "cn/index.html",
-      "chunks": [
-        "top_cn"
-      ],
-      "rootPath": "/cn/",
-      "variables": {
-        "canonical": "https://whysoserious.jp/cn/",
-        "path": "..",
-        "language": "cn",
-        "trackingId": "wss_top_cn"
-      }
-    },
-    {
-      "template": "template/zh/index.ejs",
-      "filename": "zh/index.html",
-      "chunks": [
-        ""
-      ],
-      "rootPath": "/zh/",
-      "variables": {}
     }
   ]
 }
