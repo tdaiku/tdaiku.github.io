@@ -8,3 +8,227 @@ body {
   height: auto;
   width: auto;
 }
+
+.header {
+  width: 100%;
+  height: 63px;
+  background-color: white;
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    font-family: 'Abhaya Libre ExtraBold';
+
+    a {
+      color: #013C60;
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
+
+.fv {
+  height: 443px;
+  //background: rgba(200, 200, 200, 0.2);
+
+  .fv-content {
+    width: 744.12px;
+    height: 312.23px;
+    left: 338.07px;
+    top: 68.76px;
+    position: absolute;
+
+    .rainbow {
+      width: 239.06px;
+      height: 203.09px;
+      left: 0.99px;
+      top: 53px;
+      position: absolute;
+      transform: rotate(1deg);
+      transform-origin: top left;
+    }
+
+    .en-logo {
+      position: absolute;
+      top: -10px;
+      left: 240px;
+    }
+
+    [data-layer="みらいキッズ"] {
+      width: 500.30px;
+      height: 187.13px;
+      left: 240px;
+      top: 120px;
+      position: absolute;
+      transform: rotate(-10deg);
+      transform-origin: top left;
+      color: #FFC704;
+      font-size: 120px;
+      font-family: Darumadrop One;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.top {
+  position: relative;
+  margin: 0 auto;
+}
+
+.greeting {
+  height: 916px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.20);
+  overflow: hidden;
+  position: relative;
+
+  .circle1 {
+    left: -1358px;
+    right: 0;
+    margin: 0 auto;
+    top: 263px;
+    position: absolute;
+    width: 653px;
+  }
+
+  .circle2 {
+    left: 0;
+    right: -1200px;
+    margin: 0 auto;
+    top: -182px;
+    position: absolute;
+    width: 692px;
+  }
+
+  .circle3 {
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 900px;
+  }
+
+  .wrapper {
+    .title {
+      color: #013C60;
+      font-size: 35px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+      text-align: center;
+      margin: 180px auto 0;
+    }
+
+    .sub-title {
+      margin: 20px auto 0;
+      color: #013C60;
+      font-size: 20px;
+      font-family: Asap;
+      font-weight: 700;
+      word-wrap: break-word;
+      text-align: center;
+    }
+
+    .text1 {
+      width: 774px;
+      margin: 70px auto 0;
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      line-height: 40px;
+      word-wrap: break-word;
+      text-align: center;
+    }
+
+    .banzai {
+      margin: 85px auto 0;
+      display: block;
+    }
+
+    .text2 {
+      margin: 20px auto 0;
+      text-align: center;
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.values {
+  height: 6530px;
+  background: rgba(255, 238.57, 181.44, 0);
+  overflow: hidden;
+
+  .wrapper {
+    text-align: center;
+
+    .title {
+      color: #013C60;
+      font-size: 35px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+      margin: 135px 0 0;
+    }
+
+    .sub-title {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Asap;
+      font-weight: 700;
+      word-wrap: break-word;
+      margin: 20px 0 0;
+    }
+
+    .text {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      line-height: 40px;
+      word-wrap: break-word;
+      margin: 76px 0 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 300px);
+      column-gap: 30px;
+      row-gap: 20px;
+      justify-content: center;
+
+      li {
+        position: relative;
+
+        h3 {
+          color: #013C60;
+          font-size: 25px;
+          font-family: Abhaya Libre ExtraBold;
+          font-weight: 800;
+          word-wrap: break-word;
+        }
+
+        p {
+          color: #013C60;
+          font-size: 25px;
+          font-family: Abhaya Libre ExtraBold;
+          font-weight: 800;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
