@@ -62,7 +62,7 @@ module.exports = {
         poll: true
     },
     output: {
-        path: path.resolve(__dirname, '../../', 'dist'),
+        path: path.resolve(__dirname, '..', 'dist'),
         filename: 'resources/js/[name].[chunkhash].js',
         publicPath,
     },
