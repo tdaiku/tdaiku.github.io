@@ -60,9 +60,10 @@ iframe[name="google_conversion_frame"] {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
   .wrapper {
-    width: 640px;
+    width: 750px;
+    overflow-x: hidden;
   }
 
   .to-top-btn {

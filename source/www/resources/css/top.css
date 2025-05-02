@@ -2,7 +2,7 @@
 @import 'partial/footer.css';
 
 body {
-  @mixin setBtnImg "bg.jpg";
+  @mixin setImgProperty "bg.jpg";
 
   background-repeat: repeat;
   height: auto;
@@ -295,7 +295,6 @@ body {
   }
 
   .text {
-    width: 818px;
     color: #013C60;
     font-size: 20px;
     font-family: Abhaya Libre ExtraBold;
@@ -401,6 +400,88 @@ body {
   }
 }
 
+.howtouse {
+  overflow: hidden;
+  text-align: center;
+  padding: 100px 0;
+
+  .title {
+    color: #013C60;
+    font-size: 35px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    word-wrap: break-word;
+  }
+
+  .sub-title {
+    color: #013C60;
+    font-size: 20px;
+    font-family: Asap;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 20px;
+  }
+
+  .flow {
+    color: #013C60;
+    font-size: 20px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    word-wrap: break-word;
+    margin: 50px auto 0;
+    text-align: left;
+    width: 1100px;
+  }
+
+  .flow-remark {
+    color: #013C60;
+    font-size: 20px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    word-wrap: break-word;
+    margin: 10px auto 0;
+    text-align: left;
+    width: 1100px;
+  }
+
+  .detail {
+    position: relative;
+    margin-top: 40px;
+
+    .rectangle {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 auto;
+
+      svg {
+        width: 1103px;
+        height: 552px;
+      }
+
+      path {
+        fill: #FFEFB5;
+      }
+    }
+
+    .detail-text {
+      width: 741.72px;
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      line-height: 40px;
+      word-wrap: break-word;
+      white-space: pre-line;
+      position: relative;
+      text-align: left;
+      margin: 0 auto;
+      padding: 50px 0 110px;
+    }
+  }
+}
+
 .information {
   background: white;
   overflow: hidden;
@@ -457,6 +538,304 @@ body {
         padding-right: 40px;
         background-repeat: no-repeat;
         margin-top: -5px;
+      }
+    }
+  }
+}
+
+.contact {
+  overflow: hidden;
+  text-align: center;
+  padding: 100px 0;
+
+  .wrapper {
+    .title {
+      color: #013C60;
+      font-size: 35px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+
+    .sub-title {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Asap;
+      font-weight: 700;
+      word-wrap: break-word;
+      margin-top: 20px;
+    }
+
+    .text {
+      width: 838px;
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      line-height: 40px;
+      word-wrap: break-word;
+      white-space: pre-line;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    .map {
+      max-width: 1204px;
+      width: 95%;
+      height: auto;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+
+    .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 40px;
+      font-family: 'Abhaya Libre ExtraBold';
+      flex-wrap: wrap;
+
+      img {
+        margin-top: 20px;
+      }
+
+      a {
+        color: #013C60;
+        font-size: 20px;
+        font-weight: 800;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+  }
+
+  .fv {
+    height: 443px;
+
+    .wrapper {
+      overflow: visible;
+    }
+
+    .fv-content {
+      left: 0;
+      transform: scale(0.8);
+    }
+  }
+
+  .day {
+    position: relative;
+    text-align: center;
+    padding: 100px 0 150px;
+
+    .title {
+      color: #013C60;
+      font-size: 35px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+      margin: 0 auto 20px;
+    }
+
+    .sub-title {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Asap;
+      font-weight: 700;
+      word-wrap: break-word;
+      margin: 0 auto 30px;
+    }
+
+    .text {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      line-height: 40px;
+      word-wrap: break-word;
+      margin: 0 auto 40px;
+    }
+
+    .days {
+      width: 750px;
+      flex-wrap: wrap;
+      background-color: #FFEFB5;
+      padding-bottom: 100px;
+
+      .rectangle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 750px;
+
+        path {
+          fill: #FFEFB5;
+        }
+      }
+
+      .day1,
+      .day2 {
+        position: relative;
+        display: block;
+        width: 750px;
+        padding: 70px 0 0 60px;
+
+        h3 {
+          font-family: 'Abhaya Libre ExtraBold';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 40px;
+          text-align: center;
+          color: #013C60;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-family: 'Abhaya Libre ExtraBold';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 50px;
+          color: #013C60;
+          text-align: left;
+
+          &.remark {
+            font-size: 18px;
+            line-height: 30px;
+          }
+
+          &.margin {
+            margin-top: 60px;
+          }
+        }
+
+        .school {
+          margin: 10px auto;
+        }
+
+        .block-asobi-boy {
+          position: absolute;
+          top: 325px;
+          left: 320px;
+        }
+
+        .oekaki-girl {
+          position: absolute;
+          top: 470px;
+          left: 280px;
+        }
+
+        .study-school-jugyou-girl {
+          position: absolute;
+          top: 177px;
+          left: 350px;
+        }
+
+        .obentou {
+          position: absolute;
+          top: 325px;
+          left: 340px;
+        }
+
+        .school-bus {
+          position: absolute;
+          top: 530px;
+          left: 320px;
+        }
+      }
+
+      .day2 {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .howtouse {
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+
+    .title {
+      color: #013C60;
+      font-size: 35px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+
+    .sub-title {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Asap;
+      font-weight: 700;
+      word-wrap: break-word;
+      margin-top: 20px;
+    }
+
+    .flow {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+      margin: 50px auto 0;
+      text-align: left;
+      width: 1100px;
+    }
+
+    .flow-remark {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+      margin: 10px auto 0;
+      text-align: left;
+      width: 1100px;
+    }
+
+    .detail {
+      position: relative;
+      margin-top: 40px;
+
+      .rectangle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+
+        svg {
+          width: 1103px;
+          height: 552px;
+        }
+
+        path {
+          fill: #FFEFB5;
+        }
+      }
+
+      .detail-text {
+        width: 741.72px;
+        color: #013C60;
+        font-size: 20px;
+        font-family: Abhaya Libre ExtraBold;
+        font-weight: 800;
+        line-height: 40px;
+        word-wrap: break-word;
+        white-space: pre-line;
+        position: relative;
+        text-align: left;
+        margin: 0 auto;
+        padding: 50px 0 110px;
       }
     }
   }

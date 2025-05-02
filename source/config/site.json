@@ -7,7 +7,7 @@
     "twitter": "",
     "shareText": "",
     "hashtags": "",
-    "viewport": 640
+    "viewport": 750
   },
   "variables": {
   },
@@ -23,10 +23,10 @@
       ],
       "rootPath": "/",
       "variables": {
-        "canonical": "https://whysoserious.jp/",
+        "canonical": "https://miraie-npo.com",
         "path": ".",
         "language": "",
-        "trackingId": "wss_top"
+        "trackingId": "ga"
       }
     }
   ]
