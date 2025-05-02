@@ -33,12 +33,14 @@ body {
 
 .fv {
   height: 443px;
-  //background: rgba(200, 200, 200, 0.2);
+//background: rgba(200, 200, 200, 0.2);
 
   .fv-content {
     width: 744.12px;
     height: 312.23px;
-    left: 338.07px;
+    left: 130px;
+    right: 0;
+    margin: 0 auto;
     top: 68.76px;
     position: absolute;
 
@@ -165,7 +167,6 @@ body {
 }
 
 .values {
-  height: 6530px;
   background: rgba(255, 238.57, 181.44, 0);
   overflow: hidden;
 
@@ -204,30 +205,258 @@ body {
       list-style: none;
       padding: 0;
       margin-top: 200px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 300px);
+      display: flex;
       column-gap: 30px;
       row-gap: 20px;
       justify-content: center;
+      flex-wrap: wrap;
 
       li {
         position: relative;
+        display: block;
+        width: width("li_bg1.png");
+        height: height("li_bg1.png");
 
-        h3 {
+        &:nth-child(1) {
+          background: resolve("li_bg1.png") center top no-repeat;
+        }
+
+        &:nth-child(2) {
+          background: resolve("li_bg2.png") center top no-repeat;
+          background-size: contain;
+        }
+
+        &:nth-child(3) {
+          background: resolve("li_bg3.png") center top no-repeat;
+          background-size: contain;
+        }
+
+        &:nth-child(4) {
+          background: resolve("li_bg4.png") center top no-repeat;
+          background-size: contain;
+        }
+
+        &:nth-child(5) {
+          background: resolve("li_bg5.png") center top no-repeat;
+          background-size: contain;
+
+          .li-title {
+            padding-top: 105px;
+          }
+        }
+
+        .li-title {
           color: #013C60;
           font-size: 25px;
           font-family: Abhaya Libre ExtraBold;
           font-weight: 800;
           word-wrap: break-word;
+          line-height: 35px;
+          text-align: center;
+          padding-top: 70px;
         }
 
-        p {
+        .li-text {
           color: #013C60;
           font-size: 25px;
           font-family: Abhaya Libre ExtraBold;
-          font-weight: 800;
+          font-weight: 500;
           word-wrap: break-word;
+          margin-top: 40px;
+          line-height: 35px;
+          padding: 0 35px;
         }
+      }
+    }
+  }
+}
+
+.day {
+  position: relative;
+  text-align: center;
+  padding: 100px 0 150px;
+
+  .title {
+    color: #013C60;
+    font-size: 35px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    word-wrap: break-word;
+    margin: 0 auto 20px;
+  }
+
+  .sub-title {
+    color: #013C60;
+    font-size: 20px;
+    font-family: Asap;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: 0 auto 30px;
+  }
+
+  .text {
+    width: 818px;
+    color: #013C60;
+    font-size: 20px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    line-height: 40px;
+    word-wrap: break-word;
+    margin: 0 auto 40px;
+  }
+
+  .days {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1093px;
+    margin: 0 auto;
+
+    .rectangle {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      path {
+        fill: #FFEFB5;
+      }
+    }
+
+    .day1,
+    .day2 {
+      position: relative;
+      display: block;
+      width: 50%;
+      padding: 70px 0 0 60px;
+
+      h3 {
+        font-family: 'Abhaya Libre ExtraBold';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+        color: #013C60;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: 'Abhaya Libre ExtraBold';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 50px;
+        color: #013C60;
+        text-align: left;
+
+        &.remark {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        &.margin {
+          margin-top: 60px;
+        }
+      }
+
+      .school {
+        margin: 10px auto;
+      }
+
+      .block-asobi-boy {
+        position: absolute;
+        top: 325px;
+        left: 320px;
+      }
+
+      .oekaki-girl {
+        position: absolute;
+        top: 470px;
+        left: 280px;
+      }
+
+      .study-school-jugyou-girl {
+        position: absolute;
+        top: 177px;
+        left: 350px;
+      }
+
+      .obentou {
+        position: absolute;
+        top: 325px;
+        left: 340px;
+      }
+
+      .school-bus {
+        position: absolute;
+        top: 530px;
+        left: 320px;
+      }
+    }
+
+    .day2 {
+      margin-right: 60px;
+    }
+  }
+}
+
+.information {
+  background: white;
+  overflow: hidden;
+  text-align: center;
+
+  .wrapper {
+    max-width: 1400px;
+    padding: 110px 30px;
+  }
+
+  .title {
+    color: #013C60;
+    font-size: 35px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    word-wrap: break-word;
+  }
+
+  .sub-title {
+    color: #013C60;
+    font-size: 20px;
+    font-family: Asap;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: 20px auto;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+    text-align: left;
+    margin-top: 90px;
+    padding: 0 150px;
+
+    a {
+      height: 40px;
+      color: #013C60;
+      font-size: 20px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      line-height: 40px;
+      word-wrap: break-word;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        @mixin setImgProperty "star.svg";
+
+        content: '';
+        position: relative;
+        display: inline-block;
+        padding-right: 40px;
+        background-repeat: no-repeat;
+        margin-top: -5px;
       }
     }
   }

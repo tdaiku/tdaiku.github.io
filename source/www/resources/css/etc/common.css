@@ -38,6 +38,10 @@ iframe[name="google_conversion_frame"] {
   width: 1400px;
   margin: auto;
   position: relative;
+
+  @media screen and (max-width: 1400px) {
+    width: 100%;
+  }
 }
 
 .to-top-btn {
@@ -47,12 +51,6 @@ iframe[name="google_conversion_frame"] {
 }
 
 @media screen and (min-width: 641px) {
-  .to-top-btn {
-    &:hover {
-      background-position: 0 bottom;
-    }
-  }
-
   a {
     transition: opacity 0.3s ease-in-out;
 

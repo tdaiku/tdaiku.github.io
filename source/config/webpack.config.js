@@ -153,7 +153,8 @@ module.exports = {
         sassExtraTextPlugin,
         new CopyWebpackPlugin([
             {from: 'resources/img/favicon.ico', to: 'resources/img/favicon.ico'},
-            {from: 'resources/img/ogp.jpg', to: 'resources/img/ogp.jpg'},
+            {from: 'resources/pdf/', to: 'pdf/'},
+            // {from: 'resources/img/ogp.jpg', to: 'resources/img/ogp.jpg'},
         ]),
         new webpack.ProvidePlugin({
             Promise: 'es6-promise',
