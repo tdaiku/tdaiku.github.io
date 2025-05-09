@@ -204,12 +204,27 @@ body {
     ul {
       list-style: none;
       padding: 0;
-      margin-top: 200px;
+      margin-top: 100px;
       display: flex;
-      column-gap: 30px;
-      row-gap: 20px;
-      justify-content: center;
+      column-gap: 100px;
+      row-gap: 40px;
+      justify-content: space-evenly;
       flex-wrap: wrap;
+
+      @media screen and (max-width: 1250px) {
+        justify-content: center;
+
+        li {
+          flex-basis: 100%;
+          margin-right: 0 !important;
+
+          .li-text {
+            width: 430px;
+            margin: 15px auto;
+            display: block;
+          }
+        }
+      }
 
       li {
         position: relative;
@@ -219,6 +234,13 @@ body {
 
         &:nth-child(1) {
           background: resolve("li_bg1.png") center top no-repeat;
+          flex-basis: 100%;
+
+          .li-text {
+            width: 430px;
+            margin: 15px auto;
+            display: block;
+          }
         }
 
         &:nth-child(2) {
@@ -234,15 +256,12 @@ body {
         &:nth-child(4) {
           background: resolve("li_bg4.png") center top no-repeat;
           background-size: contain;
+          margin-right: -200px;
         }
 
         &:nth-child(5) {
           background: resolve("li_bg5.png") center top no-repeat;
           background-size: contain;
-
-          .li-title {
-            padding-top: 105px;
-          }
         }
 
         .li-title {
@@ -253,16 +272,16 @@ body {
           word-wrap: break-word;
           line-height: 35px;
           text-align: center;
-          padding-top: 70px;
+          padding-top: 35px;
         }
 
         .li-text {
           color: #013C60;
-          font-size: 25px;
+          font-size: 20px;
           font-family: Abhaya Libre ExtraBold;
           font-weight: 500;
           word-wrap: break-word;
-          margin-top: 40px;
+          margin-top: 15px;
           line-height: 35px;
           padding: 0 35px;
         }
@@ -310,24 +329,16 @@ body {
     justify-content: center;
     width: 1093px;
     margin: 0 auto;
-
-    .rectangle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-
-      path {
-        fill: #FFEFB5;
-      }
-    }
+    background-color: #ffefb5;
+    border-radius: 35px;
+    border: 2px dotted #ffda63;
 
     .day1,
     .day2 {
       position: relative;
       display: block;
       width: 50%;
-      padding: 70px 0 0 60px;
+      padding: 70px 0 70px 60px;
 
       h3 {
         font-family: 'Abhaya Libre ExtraBold';
@@ -439,7 +450,7 @@ body {
     font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     word-wrap: break-word;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     text-align: left;
     width: 1100px;
   }
@@ -447,23 +458,10 @@ body {
   .detail {
     position: relative;
     margin-top: 40px;
-
-    .rectangle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      margin: 0 auto;
-
-      svg {
-        width: 1103px;
-        height: 552px;
-      }
-
-      path {
-        fill: #FFEFB5;
-      }
-    }
+    background-color: #ffefb5;
+    border-radius: 35px;
+    border: 2px dotted #ffda63;
+    margin: 40px 140px 0;
 
     .detail-text {
       width: 741.72px;
@@ -473,11 +471,10 @@ body {
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
-      white-space: pre-line;
       position: relative;
       text-align: left;
       margin: 0 auto;
-      padding: 50px 0 110px;
+      padding: 70px 0;
     }
   }
 }
@@ -573,9 +570,22 @@ body {
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
-      white-space: pre-line;
       text-align: left;
-      margin: 0 auto;
+      margin: 50px auto 0;
+
+      a {
+        color: #EA4335;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 6px;
+          left: 0;
+        }
+      }
     }
 
     .map {
@@ -583,9 +593,39 @@ body {
       width: 95%;
       height: auto;
       margin-top: 40px;
+      aspect-ratio: 1204 / 602;
     }
   }
 }
+
+footer {
+  width: 100%;
+  background-color:#ffefb5;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    font-family: 'Abhaya Libre ExtraBold';
+    padding: 40px;
+
+    a {
+      color: #013c60;
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+
+  .copyright {
+    color: #013c60;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+
 
 @media screen and (max-width: 750px) {
   .header {
@@ -796,7 +836,7 @@ body {
       font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       word-wrap: break-word;
-      margin: 10px auto 0;
+      margin: 20px auto 0;
       text-align: left;
       width: 1100px;
     }
