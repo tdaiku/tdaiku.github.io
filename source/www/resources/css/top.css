@@ -33,7 +33,6 @@ body {
 
 .fv {
   height: 443px;
-//background: rgba(200, 200, 200, 0.2);
 
   .fv-content {
     width: 744.12px;
@@ -85,7 +84,6 @@ body {
 .greeting {
   height: 916px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.20);
   overflow: hidden;
   position: relative;
 
@@ -207,7 +205,7 @@ body {
       margin-top: 100px;
       display: flex;
       column-gap: 100px;
-      row-gap: 40px;
+      row-gap: 80px;
       justify-content: space-evenly;
       flex-wrap: wrap;
 
@@ -234,18 +232,24 @@ body {
 
         &:nth-child(1) {
           background: resolve("li_bg1.png") center top no-repeat;
-          flex-basis: 100%;
+          background-size: contain;
+        }
+
+        &:nth-child(2) {
+          background: resolve("li_bg2.png") center top no-repeat;
+          background-size: contain;
+        }
+
+
+        &:nth-child(3) {
+          background: resolve("li_bg3.png") center top no-repeat;
+          background-size: contain;          flex-basis: 100%;
 
           .li-text {
             width: 430px;
             margin: 15px auto;
             display: block;
           }
-        }
-
-        &:nth-child(2) {
-          background: resolve("li_bg2.png") center top no-repeat;
-          background-size: contain;
         }
 
         &:nth-child(3) {
@@ -256,7 +260,6 @@ body {
         &:nth-child(4) {
           background: resolve("li_bg4.png") center top no-repeat;
           background-size: contain;
-          margin-right: -200px;
         }
 
         &:nth-child(5) {
@@ -293,7 +296,7 @@ body {
 .day {
   position: relative;
   text-align: center;
-  padding: 100px 0 150px;
+  padding: 235px 0 150px;
 
   .title {
     color: #013C60;
@@ -331,7 +334,7 @@ body {
     margin: 0 auto;
     background-color: #ffefb5;
     border-radius: 35px;
-    border: 2px dotted #ffda63;
+    border: 5px dotted #ffda63;
 
     .day1,
     .day2 {
@@ -388,19 +391,20 @@ body {
 
       .study-school-jugyou-girl {
         position: absolute;
-        top: 177px;
+        top: 201px;
         left: 350px;
+        width: 60px;
       }
 
       .obentou {
         position: absolute;
         top: 325px;
-        left: 340px;
+        left: 420px;
       }
 
       .school-bus {
         position: absolute;
-        top: 530px;
+        top: 495px;
         left: 320px;
       }
     }
@@ -460,8 +464,10 @@ body {
     margin-top: 40px;
     background-color: #ffefb5;
     border-radius: 35px;
-    border: 2px dotted #ffda63;
-    margin: 40px 140px 0;
+    border: 5px dotted #ffda63;
+    margin: 40px auto 0;
+    width: 100%;
+    max-width: 1093px;
 
     .detail-text {
       width: 741.72px;
@@ -484,7 +490,6 @@ body {
   text-align: center;
 
   .wrapper {
-    max-width: 1400px;
     padding: 110px 30px;
   }
 
@@ -629,42 +634,202 @@ footer {
 
 @media screen and (max-width: 750px) {
   .header {
-    width: 100%;
-    height: 120px;
-    background-color: white;
+    height: auto;
 
     .header-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      column-gap: 40px;
-      font-family: 'Abhaya Libre ExtraBold';
       flex-wrap: wrap;
+      padding: 20px 0;
+      row-gap: 20px;
 
-      img {
-        margin-top: 20px;
+      .rainbow {
+        display: none;
       }
-
+  
       a {
-        color: #013C60;
-        font-size: 20px;
-        font-weight: 800;
-        text-decoration: none;
-        display: inline-block;
+        font-size: 25px;
+        line-height: 1.5;
       }
     }
   }
 
   .fv {
-    height: 443px;
-
-    .wrapper {
-      overflow: visible;
-    }
+    height: auto;
+    padding: 20px 0;
 
     .fv-content {
+      width: 100%;
+      height: auto;
+      position: relative;
       left: 0;
-      transform: scale(0.8);
+      top: 0;
+      padding: 0 15px;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 350px 0 150px;
+
+      .rainbow {
+        height: auto;
+        position: relative;
+        left: 0;
+        top: 40px;
+        right: 0;
+        width: 70%;
+        margin: 0 auto;
+        transform: none;
+        position: absolute;
+        opacity: 0.8;
+      }
+
+      .en-logo.v-sp {
+        font-family: Darumadrop One;
+        font-size: 60px;
+        color: #FFC704;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+        margin: 0 auto;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+                     -2px -2px 4px rgba(255, 255, 255, 0.5);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+      }
+
+      [data-layer="みらいキッズ"] {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        font-size: 150px;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+                     -2px -2px 4px rgba(255, 255, 255, 0.5);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+      }
+    }
+  }
+
+  .greeting {
+    height: auto;
+    padding: 40px 0 180px;
+
+    .circle1 {
+      left: -717px;
+      right: 0;
+      margin: 0 auto;
+      top: 663px;
+      position: absolute;
+      width: 173px;
+    }
+  
+    .circle2 {
+      right: -660px;
+      margin: 0 auto;
+      top: 0px;
+      position: absolute;
+      width: 192px;
+    }
+  
+    .circle3 {
+      left: -50px;
+      top: 0;
+      right: auto;
+      margin: 0 auto;
+      position: absolute;
+      width: 840px;
+    }
+
+    .wrapper {
+      .title {
+        font-size: 42px;
+        margin: 120px auto 0;
+      }
+
+      .sub-title {
+        font-size: 25px;
+        margin: 15px auto 0;
+      }
+
+      .text1, .text2 {
+        width: 100%;
+        font-size: 25px;
+        line-height: 1.8;
+        margin: 30px auto 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+
+      .banzai {
+        width: 30%;
+        margin: 40px auto 0;
+      }
+    }
+  }
+
+  .values {
+    .wrapper {
+      .title {
+        font-size: 42px;
+        margin: 100px 0 0;
+        padding: 0 15px;
+      }
+
+      .sub-title {
+        font-size: 25px;
+        margin: 15px 0 0;
+        padding: 0 15px;
+      }
+
+      .text {
+        font-size: 25px;
+        line-height: 1.8;
+        margin: 40px 0 0;
+        padding: 0 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 100px;
+        display: flex;
+        column-gap: 100px;
+        row-gap: 60px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+  
+        li {
+          position: relative;
+          display: block;
+          width: 650px;
+          height: 257px;
+          background-size: contain;
+  
+          .li-title {
+            color: #013C60;
+            font-size: 35px;
+            font-family: Abhaya Libre ExtraBold;
+            font-weight: 800;
+            word-wrap: break-word;
+            line-height: 35px;
+            text-align: center;
+            padding-top: 50px;
+          }
+  
+          .li-text {
+            color: #013C60;
+            font-size: 27px;
+            font-family: Abhaya Libre ExtraBold;
+            font-weight: 500;
+            word-wrap: break-word;
+            margin-top: 30px !important;
+            line-height: 45px !important;
+            padding: 0 35px;
+            width: 650px !important;
+          }
+        }
+      }
     }
   }
 
@@ -827,7 +992,7 @@ footer {
       word-wrap: break-word;
       margin: 50px auto 0;
       text-align: left;
-      width: 1100px;
+      width: 710px;
     }
 
     .flow-remark {
@@ -838,32 +1003,16 @@ footer {
       word-wrap: break-word;
       margin: 20px auto 0;
       text-align: left;
-      width: 1100px;
+      width: 710px;
     }
 
     .detail {
       position: relative;
       margin-top: 40px;
-
-      .rectangle {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: 0 auto;
-
-        svg {
-          width: 1103px;
-          height: 552px;
-        }
-
-        path {
-          fill: #FFEFB5;
-        }
-      }
+      width: 710px;
 
       .detail-text {
-        width: 741.72px;
+        width: 660px;
         color: #013C60;
         font-size: 20px;
         font-family: Abhaya Libre ExtraBold;
@@ -878,4 +1027,148 @@ footer {
       }
     }
   }
+
+  .information {
+    .title {
+      color: #013C60;
+      font-size: 35px;
+      font-family: Abhaya Libre ExtraBold;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+
+    .sub-title {
+      color: #013C60;
+      font-size: 20px;
+      font-family: Asap;
+      font-weight: 700;
+      word-wrap: break-word;
+      margin: 20px auto;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 70px;
+      text-align: left;
+      margin-top: 90px;
+      padding: 0 150px;
+
+      a {
+        height: 40px;
+        color: #013C60;
+        font-size: 20px;
+        font-family: Abhaya Libre ExtraBold;
+        font-weight: 800;
+        line-height: 40px;
+        word-wrap: break-word;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          @mixin setImgProperty "star.svg";
+
+          content: '';
+          position: relative;
+          display: inline-block;
+          padding-right: 40px;
+          background-repeat: no-repeat;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+
+    .wrapper {
+      .title {
+        color: #013C60;
+        font-size: 35px;
+        font-family: Abhaya Libre ExtraBold;
+        font-weight: 800;
+        word-wrap: break-word;
+      }
+
+      .sub-title {
+        color: #013C60;
+        font-size: 20px;
+        font-family: Asap;
+        font-weight: 700;
+        word-wrap: break-word;
+        margin-top: 20px;
+      }
+
+      .text {
+        width: 838px;
+        color: #013C60;
+        font-size: 20px;
+        font-family: Abhaya Libre ExtraBold;
+        font-weight: 800;
+        line-height: 40px;
+        word-wrap: break-word;
+        text-align: left;
+        margin: 50px auto 0;
+
+        a {
+          color: #EA4335;
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          position: relative;
+
+          svg {
+            position: absolute;
+            top: 6px;
+            left: 0;
+          }
+        }
+      }
+
+      .map {
+        max-width: 1204px;
+        width: 95%;
+        height: auto;
+        margin-top: 40px;
+        aspect-ratio: 1204 / 602;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    background-color:#ffefb5;
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 40px;
+      font-family: 'Abhaya Libre ExtraBold';
+      padding: 40px;
+
+      a {
+        color: #013c60;
+        font-size: 18px;
+        font-weight: 800;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+
+    .copyright {
+      color: #013c60;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  display: none;
 }
