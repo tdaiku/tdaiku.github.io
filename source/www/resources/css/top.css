@@ -635,6 +635,7 @@ footer {
 @media screen and (max-width: 750px) {
   .header {
     height: auto;
+    background-color: #ffefb5;
 
     .header-content {
       flex-wrap: wrap;
