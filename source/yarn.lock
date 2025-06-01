@@ -5590,6 +5590,11 @@ micromatch@^3.0.4, micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
+micromodal@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/micromodal/-/micromodal-0.6.1.tgz#2558c1802317a53e89f7913652a1eb8b91454738"
+  integrity sha512-rw1fOptxQe3XGDm9xil9hBC2ylPb1kKZyYv4FlK54R/7L+KG+D8SQxPL5L8OlEXAhBDHckeoULYxWSYU9rg/RA==
+
 miller-rabin@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/miller-rabin/-/miller-rabin-4.0.1.tgz#f080351c865b0dc562a8462966daa53543c78a4d"

@@ -490,7 +490,7 @@ body {
   text-align: center;
 
   .wrapper {
-    padding: 110px 30px;
+    padding: 110px 0;
   }
 
   .title {
@@ -515,7 +515,7 @@ body {
     grid-template-columns: 1fr;
     row-gap: 70px;
     text-align: left;
-    margin-top: 90px;
+    margin: 90px 0;
     padding: 0 150px;
 
     a {
@@ -631,6 +631,177 @@ footer {
   }
 }
 
+/* モーダル関連のスタイル */
+.modal-trigger {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 30px;
+  background-color: #ffefb5;
+  border: 2px solid #ffda63;
+  border-radius: 25px;
+  color: #013C60;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ffda63;
+    transform: translateY(-2px);
+  }
+}
+
+.modal {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  &__container {
+    background-color: #fff;
+    padding: 50px 30px;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 35px;
+    box-sizing: border-box;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  &__title {
+    color: #013C60;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__close {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    top: 40px;
+    z-index: 1001;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 45px;
+      height: 3px;
+      background-color: #013C60;
+      top: 50%;
+      left: 0;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__content {
+    margin: 40px 0;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 10px;
+
+    /* スクロールバーのスタイリング */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #ffda63;
+      border-radius: 4px;
+
+      &:hover {
+        background: #ffc704;
+      }
+    }
+  }
+}
+
+.modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+
+  li {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #013C60;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    padding: 5px 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:before {
+      @mixin setImgProperty "star.svg";
+
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-right: 20px;
+    }
+  }
+}
 
 @media screen and (max-width: 750px) {
   .header {
@@ -1117,6 +1288,56 @@ footer {
       padding-bottom: 20px;
       text-align: center;
       font-size: 20px;
+    }
+  }
+
+  .modal-trigger {
+    font-size: 25px;
+    padding: 20px 40px;
+    margin: 40px auto 0;
+  }
+
+  .modal {
+    &__container {
+      padding: 40px 20px;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__close {
+      right: 30px;
+      top: 30px;
+      width: 45px;
+      height: 45px;
+      padding: 15px;
+
+      &:before,
+      &:after {
+        width: 45px;
+        height: 3px;
+      }
+    }
+
+    &__content {
+      max-height: 70vh;
+    }
+  }
+
+  .modal-list {
+    li {
+      margin-bottom: 50px;
+    }
+
+    a {
+      font-size: 35px;
+
+      &:before {
+        width: 30px;
+        height: 30px;
+        margin-right: 25px;
+      }
     }
   }
 }

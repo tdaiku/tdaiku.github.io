@@ -27,7 +27,7 @@
             <div data-layer="FV_Content" class="fv-content">
                 <img data-layer="rainbow" class="rainbow" src="<%= require('resources/img/fv_rainbow.png') %>"/>
                 <img data-layer="rainbow" class="en-logo v-pc" src="<%= require('resources/img/fv_en_logo.svg') %>"/>
-                <div class="en-logo v-sp">mirae kids</div>
+                <div class="en-logo v-sp">mirai kids</div>
                 <div data-layer="みらいキッズ">みらいキッズ</div>
             </div>
         </div>
@@ -134,7 +134,7 @@
                     <h3>
                         放　課　後
                     </h3>
-                    <img class="school"
+                    <img class="school v-pc"
                          src="<%= require('resources/img/school.png') %>" alt="school"/>
                     <p>１５：００　お迎え（学校）</p>
                     <p>１５：３０　着替え・学習・自由遊び</p>
@@ -164,7 +164,7 @@
                     <p>１４：４５　帰りの会</p>
                     <p>１５：００　降所</p>
                     <p class="remark margin">※　帰宅時間は、送迎の順番によって変動します。</p>
-                    <p class="remark">※　長期休暇中はお弁当をご準備ください。</p>
+                    <p class="remark">※　長期休暇中は、お弁当をご準備ください。</p>
                     <img class="study-school-jugyou-girl"
                          src="<%= require('resources/img/study_school_jugyou_girl.png') %>"
                          alt="study_school_jugyou_girl"/>
@@ -220,27 +220,25 @@
                 Information
             </p>
             <ul>
-                <li>
+                <!-- <li>
                     <a href="/pdf/sample.pdf" title="ひだまり通信" target="_blank">
                         ひだまり通信
                     </a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="/pdf/sample.pdf" title="パンフレット" target="_blank">
+                    <a href="/pdf/パンフレット.pdf" title="パンフレット" target="_blank">
                         パンフレット
                     </a>
                 </li>
                 <li>
-                    <a href="/pdf/sample.pdf" title="支援プログラム" target="_blank">
+                    <a href="/pdf/支援プログラム.pdf" title="支援プログラム" target="_blank">
                         支援プログラム
                     </a>
                 </li>
-                <li class="disabled">
-                    <a href="/pdf/sample.pdf" title="支援プログラム" target="_blank">
-                        ガイドラインアンケート結果
-                    </a>
-                </li>
             </ul>
+            <button class="modal-trigger" data-micromodal-trigger="information-modal">
+              過去のひだまり通信を見る
+            </button>
         </div>
     </div>
     <div class="contact" id="contact">
@@ -254,7 +252,7 @@
             <div class="text">
                 特定非営利活動法人ミライエ　みらいキッズ<br />
                 〒８９９－２７０３　鹿児島市上谷口町２８６５－１<br/>
-                📞０８０－４０７２－１６６２（受付時間　平日１０：００～１９：００）<br/>
+                📞０９９－８０３－２１９８（受付時間　平日１０：００～１９：００）<br/>
                 個別相談・見学も随時受け付けています。お気軽にお問い合わせください。<br/>
             </div>
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318.9442304865216!2d130.4366391175286!3d31.604937248156876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e68517c2095c3%3A0xe560a6374b591343!2z44CSODk5LTI3MDMg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5LiK6LC35Y-j55S677yS77yY77yW77yV4oiS77yR!5e0!3m2!1sja!2sjp!4v1746794226227!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -274,5 +272,19 @@
         <p class="copyright">© 2025 特定非営利活動法人ミライエ All Rights Reserved.</p>
     </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    MicroModal.init({
+      openTrigger: 'data-micromodal-trigger',
+      closeTrigger: 'data-micromodal-close',
+      disableScroll: true,
+      disableFocus: false,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true
+    });
+  });
+</script>
+
+<% include ./partial/_information-modal.ejs %>
 </body>
 </html>
