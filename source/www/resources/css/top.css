@@ -7,6 +7,7 @@ body {
   background-repeat: repeat;
   height: auto;
   width: auto;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
 }
 
 .header {
@@ -19,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 40px;
-    font-family: 'Abhaya Libre ExtraBold';
 
     a {
       color: #013C60;
@@ -118,7 +118,6 @@ body {
     .title {
       color: #013C60;
       font-size: 35px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       word-wrap: break-word;
       text-align: center;
@@ -140,7 +139,6 @@ body {
       margin: 70px auto 0;
       color: #013C60;
       font-size: 20px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
@@ -157,7 +155,6 @@ body {
       text-align: center;
       color: #013C60;
       font-size: 20px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       word-wrap: break-word;
     }
@@ -174,7 +171,6 @@ body {
     .title {
       color: #013C60;
       font-size: 35px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       word-wrap: break-word;
       margin: 135px 0 0;
@@ -192,7 +188,6 @@ body {
     .text {
       color: #013C60;
       font-size: 20px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
@@ -270,7 +265,6 @@ body {
         .li-title {
           color: #013C60;
           font-size: 25px;
-          font-family: Abhaya Libre ExtraBold;
           font-weight: 800;
           word-wrap: break-word;
           line-height: 35px;
@@ -281,7 +275,6 @@ body {
         .li-text {
           color: #013C60;
           font-size: 20px;
-          font-family: Abhaya Libre ExtraBold;
           font-weight: 500;
           word-wrap: break-word;
           margin-top: 15px;
@@ -301,7 +294,6 @@ body {
   .title {
     color: #013C60;
     font-size: 35px;
-    font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     word-wrap: break-word;
     margin: 0 auto 20px;
@@ -319,7 +311,6 @@ body {
   .text {
     color: #013C60;
     font-size: 20px;
-    font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     line-height: 40px;
     word-wrap: break-word;
@@ -344,7 +335,6 @@ body {
       padding: 70px 0 70px 60px;
 
       h3 {
-        font-family: 'Abhaya Libre ExtraBold';
         font-style: normal;
         font-weight: 800;
         font-size: 25px;
@@ -355,7 +345,6 @@ body {
       }
 
       p {
-        font-family: 'Abhaya Libre ExtraBold';
         font-style: normal;
         font-weight: 800;
         font-size: 20px;
@@ -423,7 +412,6 @@ body {
   .title {
     color: #013C60;
     font-size: 35px;
-    font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     word-wrap: break-word;
   }
@@ -440,7 +428,6 @@ body {
   .flow {
     color: #013C60;
     font-size: 20px;
-    font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     word-wrap: break-word;
     margin: 50px auto 0;
@@ -451,7 +438,6 @@ body {
   .flow-remark {
     color: #013C60;
     font-size: 20px;
-    font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     word-wrap: break-word;
     margin: 20px auto 0;
@@ -473,7 +459,6 @@ body {
       width: 741.72px;
       color: #013C60;
       font-size: 20px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
@@ -496,14 +481,13 @@ body {
   .title {
     color: #013C60;
     font-size: 35px;
-    font-family: Abhaya Libre ExtraBold;
     font-weight: 800;
     word-wrap: break-word;
   }
 
   .sub-title {
     color: #013C60;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Asap;
     font-weight: 700;
     word-wrap: break-word;
@@ -522,7 +506,6 @@ body {
       height: 40px;
       color: #013C60;
       font-size: 20px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
@@ -553,7 +536,6 @@ body {
     .title {
       color: #013C60;
       font-size: 35px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       word-wrap: break-word;
     }
@@ -571,7 +553,6 @@ body {
       width: 838px;
       color: #013C60;
       font-size: 20px;
-      font-family: Abhaya Libre ExtraBold;
       font-weight: 800;
       line-height: 40px;
       word-wrap: break-word;
@@ -612,7 +593,6 @@ footer {
     justify-content: center;
     align-items: center;
     column-gap: 40px;
-    font-family: 'Abhaya Libre ExtraBold';
     padding: 40px;
 
     a {
@@ -640,7 +620,6 @@ footer {
   border: 2px solid #ffda63;
   border-radius: 25px;
   color: #013C60;
-  font-family: 'Abhaya Libre ExtraBold';
   font-size: 20px;
   font-weight: 800;
   cursor: pointer;
@@ -694,7 +673,6 @@ footer {
 
   &__title {
     color: #013C60;
-    font-family: 'Abhaya Libre ExtraBold';
     font-size: 35px;
     font-weight: 800;
     margin: 0;
@@ -775,7 +753,6 @@ footer {
 
   a {
     color: #013C60;
-    font-family: 'Abhaya Libre ExtraBold';
     font-size: 28px;
     font-weight: 800;
     text-decoration: none;
@@ -804,6 +781,10 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+  }
+
   .header {
     height: auto;
     background-color: #ffefb5;
@@ -981,7 +962,6 @@ footer {
           .li-title {
             color: #013C60;
             font-size: 35px;
-            font-family: Abhaya Libre ExtraBold;
             font-weight: 800;
             word-wrap: break-word;
             line-height: 35px;
@@ -992,7 +972,6 @@ footer {
           .li-text {
             color: #013C60;
             font-size: 27px;
-            font-family: Abhaya Libre ExtraBold;
             font-weight: 500;
             word-wrap: break-word;
             margin-top: 30px !important;
@@ -1180,7 +1159,6 @@ footer {
       .title {
         color: #013C60;
         font-size: 42px;
-        font-family: Abhaya Libre ExtraBold;
         font-weight: 800;
         word-wrap: break-word;
       }
@@ -1188,7 +1166,6 @@ footer {
       .sub-title {
         color: #013C60;
         font-size: 25px;
-        font-family: Asap;
         font-weight: 700;
         word-wrap: break-word;
         margin: 20px auto;
@@ -1206,7 +1183,6 @@ footer {
           height: 40px;
           color: #013C60;
           font-size: 25px;
-          font-family: Abhaya Libre ExtraBold;
           font-weight: 800;
           line-height: 40px;
           word-wrap: break-word;
@@ -1242,7 +1218,6 @@ footer {
         width: 838px;
         color: #013C60;
         font-size: 20px;
-        font-family: Abhaya Libre ExtraBold;
         font-weight: 800;
         line-height: 40px;
         word-wrap: break-word;
@@ -1269,7 +1244,6 @@ footer {
       justify-content: center;
       align-items: center;
       column-gap: 40px;
-      font-family: 'Abhaya Libre ExtraBold';
       padding: 40px;
       flex-wrap: wrap;
       row-gap: 20px;
