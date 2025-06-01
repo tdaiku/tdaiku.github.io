@@ -466,6 +466,27 @@ body {
       text-align: left;
       margin: 0 auto;
       padding: 70px 0;
+
+      .detail-item {
+        display: flex;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .detail-label {
+          width: 90px;
+          padding-right: 30px;
+          text-align: justify;
+          text-align-last: justify;
+          text-justify: inter-ideograph;
+        }
+
+        .detail-value {
+          flex: 1;
+        }
+      }
     }
   }
 }
@@ -780,11 +801,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 750px) {
-  body {
-    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
-  }
-
+@media screen and (max-width: 1100px) {
   .header {
     height: auto;
     background-color: #ffefb5;
@@ -803,6 +820,12 @@ footer {
         line-height: 1.5;
       }
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
   }
 
   .fv {
@@ -1144,11 +1167,29 @@ footer {
         font-size: 21px;
         line-height: 40px;
         word-wrap: break-word;
-        white-space: pre-line;
         position: relative;
         text-align: left;
         margin: 0 auto;
-        padding: 30px 0 90px;
+        padding: 90px 0;
+
+        .detail-item {
+          margin-bottom: 20px;
+          padding-left: 20px;
+
+          .detail-label {
+            width: 90px;
+            padding-right: 30px;
+            text-align: justify;
+            text-align-last: justify;
+            text-justify: inter-ideograph;
+          }
+          .detail-value {
+            .note {
+              font-size: 19px;
+              line-height: 1.5;
+            }
+          }
+        }
       }
     }
   }
