@@ -32,10 +32,7 @@ default:
 
 let plugins = pages.map((page) => {
     return new HtmlWebpackPlugin(Object.assign({
-        minify: {
-            removeComments: isProd,
-            collapseWhitespace: isProd,
-        },
+        minify: false,
     }, page));
 });
 
@@ -89,7 +86,12 @@ module.exports = {
                 use: sassExtraTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
-                        'css-loader',
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                minimize: false
+                            }
+                        },
                         {
                             loader: 'postcss-loader',
                             options: {
@@ -108,7 +110,12 @@ module.exports = {
                 use: sassExtraTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
-                        'css-loader',
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                minimize: false
+                            }
+                        },
                         {
                             loader: 'postcss-loader',
                             options: {
@@ -131,7 +138,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(jpg|jpeg|png|gif|webp|ico|mp4|mp3)$/,
+                test: /\.(jpg|jpeg|png|gif|webp|ico|mp4|mp3|svg)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -140,7 +147,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(eot|svg|woff|ttf)$/,
+                test: /\.(eot|woff|ttf)$/,
                 use: 'url-loader',
             },
             {
@@ -154,7 +161,7 @@ module.exports = {
         new CopyWebpackPlugin([
             {from: 'resources/img/favicon.ico', to: 'resources/img/favicon.ico'},
             {from: 'resources/pdf/', to: 'pdf/'},
-            // {from: 'resources/img/ogp.jpg', to: 'resources/img/ogp.jpg'},
+            {from: 'resources/img/ogp.jpg', to: 'resources/img/ogp.jpg'},
         ]),
         new webpack.ProvidePlugin({
             Promise: 'es6-promise',
