@@ -1075,7 +1075,7 @@ footer {
 
         .oekaki-girl {
           position: absolute;
-          top: 500px;
+          top: 455px;
           left: 380px;
           width: 100px;
         }
@@ -1183,11 +1183,9 @@ footer {
             text-align-last: justify;
             text-justify: inter-ideograph;
           }
-          .detail-value {
-            .note {
-              font-size: 19px;
-              line-height: 1.5;
-            }
+          .note {
+            font-size: 19px;
+            line-height: 1.5;
           }
         }
       }
