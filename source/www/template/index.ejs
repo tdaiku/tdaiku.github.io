@@ -42,40 +42,46 @@
                 <p class="sub-title">
                   Information
                 </p>
-                <ul>
+                <ul class="information-list">
                   <li>
                     <a href="pdf/hidamari/2025/hidamari08.pdf" title="ひだまり　令和７年８月号" target="_blank">
-                      ひだまり　令和７年８月号
+                      <p class="date">2025.08</p>
+                      <span class="title-text">ひだまり　令和７年８月号</span>
                     </a>
                   </li>
                   <li>
                     <a href="pdf/hidamari/2025/hidamari07.pdf" title="ひだまり　令和７年７月号" target="_blank">
-                      ひだまり　令和７年７月号
+                      <p class="date">2025.07</p>
+                      <span class="title-text">ひだまり　令和７年７月号</span>
                     </a>
                   </li>
-                  <li>
+                  <li class="no-disp">
                     <a href="pdf/hidamari/2025/hidamari06.pdf" title="ひだまり　令和７年６月号" target="_blank">
-                      ひだまり　令和７年６月号
+                      <p class="date">2025.06</p>
+                      <span class="title-text">ひだまり　令和７年６月号</span>
                     </a>
                   </li>
                   <li>
                     <a href="/pdf/pamphlet.pdf" title="パンフレット" target="_blank">
-                      パンフレット
+                      <p class="date">2025.05</p>
+                      <span class="title-text">パンフレット</span>
                     </a>
                   </li>
                   <li>
                     <a href="pdf/gakkoue.pdf" title="学校へ行きたくても行けないこどもさんへの支援" target="_blank">
-                      学校へ行きたくても行けないこどもさんへの支援
+                      <p class="date">2025.05</p>
+                      <span class="title-text">学校へ行きたくても行けないこどもさんへの支援</span>
                     </a>
                   </li>
                   <li>
                     <a href="/pdf/support_program.pdf" title="支援プログラム" target="_blank">
-                      支援プログラム
+                      <p class="date">2025.05</p>
+                      <span class="title-text">支援プログラム</span>
                     </a>
                   </li>
                 </ul>
-                <button class="modal-trigger" style="display: none;" data-micromodal-trigger="information-modal">
-                  過去のひだまり通信を見る
+                <button class="modal-trigger" data-micromodal-trigger="information-modal">
+                  過去のお知らせ
                 </button>
               </div>
             </div>
@@ -337,7 +343,24 @@
             });
           </script>
 
-          <% include ./partial/_information-modal.ejs %>
+          <!-- お知らせモーダル -->
+          <div class="modal micromodal-slide" id="information-modal" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+              <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                  <h2 class="modal__title" id="modal-1-title">
+                    過去のお知らせ
+                  </h2>
+                </header>
+                <button class="modal__close" aria-label="モーダルを閉じる" data-micromodal-close></button>
+                <main class="modal__content" id="modal-1-content">
+                  <ul class="modal-list">
+                    <!-- JavaScriptで動的にコンテンツを生成 -->
+                  </ul>
+                </main>
+              </div>
+            </div>
+          </div>
       </body>
 
       </html>
