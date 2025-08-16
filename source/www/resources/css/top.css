@@ -729,7 +729,7 @@ footer {
 
   &__container {
     background-color: #fff;
-    padding: 50px 30px;
+    padding: 50px;
     max-width: 800px;
     width: 90%;
     border-radius: 35px;
@@ -818,10 +818,10 @@ footer {
   list-style: none;
   padding: 0;
   margin: 40px 0;
+  row-gap: 20px;
+  display: grid;
 
   li {
-    margin-bottom: 40px;
-
     &:last-child {
       margin-bottom: 0;
     }
@@ -832,26 +832,33 @@ footer {
     font-size: 28px;
     font-weight: 800;
     text-decoration: none;
-    display: flex;
     align-items: center;
     transition: opacity 0.3s ease;
-    padding: 5px 0;
+    position: relative;
+    line-height: 1.2;
 
     &:hover {
       opacity: 0.8;
     }
 
+    .date {
+      color: #666;
+      font-size: 20px;
+    }
+
     &:before {
       @mixin setImgProperty "star.svg";
 
-      content: '';
+      content: none;
       display: inline-block;
       width: 25px;
       height: 25px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      margin-right: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }
@@ -1395,10 +1402,6 @@ footer {
   }
 
   .modal-list {
-    li {
-      margin-bottom: 50px;
-    }
-
     a {
       font-size: 35px;
 
