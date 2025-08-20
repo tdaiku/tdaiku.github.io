@@ -49,24 +49,41 @@ body {
       left: 0.99px;
       top: 53px;
       position: absolute;
-      transform: rotate(1deg);
-      transform-origin: top left;
+    }
+
+    .label {
+      font-size: 20px;
+      font-weight: 800;
+      color: #FFC704;
+      left: 80px;
+      margin: 0 auto;
+      position: relative;
+      right: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -2px -2px 4px hsla(0, 0%, 100%, 0.4);
+      top: 60px;
+      width: 50%;  
+      display: none;
     }
 
     .en-logo {
-      position: absolute;
-      top: -10px;
-      left: 240px;
+      font-family: Darumadrop One;
+      font-size: 50px;
+      color: #FFC704;
+      left: 80px;
+      margin: 0 auto;
+      position: relative;
+      right: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px hsla(0, 0%, 100%, 0.1);
+      top: 60px;
+      width: 50%;  
     }
 
     [data-layer="みらいキッズ"] {
       width: 500.30px;
       height: 187.13px;
-      left: 240px;
-      top: 120px;
+      left: 260px;
+      top: 105px;
       position: absolute;
-      transform: rotate(-10deg);
-      transform-origin: top left;
       color: #FFC704;
       font-size: 120px;
       font-family: Darumadrop One;
@@ -911,7 +928,7 @@ footer {
         opacity: 0.8;
       }
 
-      .en-logo.v-sp {
+      .en-logo {
         font-family: Darumadrop One;
         font-size: 60px;
         color: #FFC704;
@@ -1410,4 +1427,88 @@ footer {
 .disabled {
   pointer-events: none;
   display: none;
+}
+
+/* スライダー関連のスタイル */
+.slide-container {
+  position: relative;
+  max-width: 840px;
+  margin: 40px auto;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  height: 542px;
+  object-fit: contain;
+}
+
+.slide-prev,
+.slide-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 24px;
+  color: #013C60;
+  border: 1px solid #013C60;
+}
+
+.slide-prev {
+  left: 0;
+}
+
+.slide-next {
+  right: 0;
+}
+
+.slide-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tns-nav button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+}
+
+.tns-nav button.tns-nav-active {
+  background: #013C60;
+}
+
+/* slick用のドットスタイル */
+.slick-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+
+  &:before {
+    display: none !important;
+  }
+}
+
+.slick-dots li.slick-active button {
+  background: #013C60;
 }

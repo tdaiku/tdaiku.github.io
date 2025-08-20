@@ -1,6 +1,10 @@
 import MicroModal from 'micromodal';
 import 'babel-polyfill';
 import Common from './common';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import $ from 'jquery';
+import 'slick-carousel';
 
 import '../css/top.css';
 
@@ -10,6 +14,7 @@ class Top extends Common {
         this.initModal();
         this.initInformationNewMarks();
         this.initModalContent();
+        this.initSlider();
     }
 
     initModal() {
@@ -78,6 +83,23 @@ class Top extends Common {
             // 既存のコンテンツを置き換え
             modalList.innerHTML = clonedContent.innerHTML;
         }
+    }
+
+    // スライダーの初期化
+    initSlider() {
+        $('.slide-wrapper').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            arrows: true,
+            prevArrow: '.slide-prev',
+            nextArrow: '.slide-next',
+            dotsContainer: '.slide-dots'
+        });
     }
 
     // eslint-disable-next-line class-methods-use-this

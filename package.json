@@ -22,8 +22,9 @@
     "babel-polyfill": "^6.26.0",
     "es6-promise": "^4.2.1",
     "events": "^3.0.0",
+    "jquery": "^3.7.1",
     "micromodal": "^0.6.1",
-    "swiper": "~5.4.5",
+    "slick-carousel": "^1.8.1",
     "ua-parser-js": "^0.7.18"
   },
   "devDependencies": {
