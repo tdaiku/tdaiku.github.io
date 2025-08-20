@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
     base: publicPath,
     
     build: {
-      outDir: '../dist',
+      outDir: '../docs',
       assetsDir: 'resources',
       rollupOptions: {
         input: {
