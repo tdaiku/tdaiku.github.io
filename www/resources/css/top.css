@@ -226,19 +226,19 @@ body {
         height: height("li_bg1.png");
 
         &:nth-child(1) {
-          background: resolve("li_bg1.png") center top no-repeat;
+          background: url('/resources/img/li_bg1.png') center top no-repeat;
           background-size: contain;
         }
 
         &:nth-child(2) {
-          background: resolve("li_bg2.png") center top no-repeat;
+          background: url('/resources/img/li_bg2.png') center top no-repeat;
           background-size: contain;
         }
 
-
         &:nth-child(3) {
-          background: resolve("li_bg3.png") center top no-repeat;
-          background-size: contain;          flex-basis: 100%;
+          background: url('/resources/img/li_bg3.png') center top no-repeat;
+          background-size: contain;
+          flex-basis: 100%;
 
           .li-text {
             width: 430px;
@@ -247,18 +247,13 @@ body {
           }
         }
 
-        &:nth-child(3) {
-          background: resolve("li_bg3.png") center top no-repeat;
-          background-size: contain;
-        }
-
         &:nth-child(4) {
-          background: resolve("li_bg4.png") center top no-repeat;
+          background: url('/resources/img/li_bg4.png') center top no-repeat;
           background-size: contain;
         }
 
         &:nth-child(5) {
-          background: resolve("li_bg5.png") center top no-repeat;
+          background: url('/resources/img/li_bg5.png') center top no-repeat;
           background-size: contain;
         }
 
@@ -570,7 +565,7 @@ body {
 
       &.new:after {
         content: 'NEW';
-        background-color: #ff6b6b;
+        background-color: #FFC704;
         color: white;
         font-size: 12px;
         font-weight: 700;
@@ -1038,8 +1033,8 @@ footer {
         li {
           position: relative;
           display: block;
-          width: 650px;
-          height: 257px;
+          width: width("li_bg1.png");
+          height: 250px;
           background-size: contain;
   
           .li-title {
