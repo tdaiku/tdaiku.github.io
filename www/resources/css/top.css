@@ -1441,7 +1441,7 @@ footer {
   height: auto;
   border-radius: 10px;
   height: 542px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .slide-prev,
