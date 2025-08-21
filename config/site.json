@@ -9,8 +9,7 @@
     "hashtags": "",
     "viewport": 750
   },
-  "variables": {
-  },
+  "variables": {},
   "scripts": {
     "top": "./resources/js/top.js"
   },
@@ -23,7 +22,7 @@
       ],
       "rootPath": "/",
       "variables": {
-        "canonical": "https://miraie-npo.com",
+        "canonical": "https://miraie-npo.org",
         "path": ".",
         "language": "",
         "trackingId": "ga"
