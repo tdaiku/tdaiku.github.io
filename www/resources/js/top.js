@@ -91,14 +91,16 @@ class Top extends Common {
             dots: true,
             infinite: true,
             speed: 300,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 10000,
+            autoplay: false,
+            autoplaySpeed: 5000,
             arrows: true,
             prevArrow: '.slide-prev',
             nextArrow: '.slide-next',
-            dotsContainer: '.slide-dots'
+            dotsContainer: '.slide-dots',
+            variableWidth: true,
+            centerMode: true,
         });
     }
 

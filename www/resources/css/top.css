@@ -33,21 +33,27 @@ body {
 
 .fv {
   height: 443px;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 
   .fv-content {
-    width: 744.12px;
-    height: 312.23px;
-    left: 130px;
-    right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    height: 302.23px;
+    left: 0;
     margin: 0 auto;
-    top: 68.76px;
     position: absolute;
+    right: 0;
+    top: 80.16px;
+    width: 744.12px;
+    transform: scale(0.8);
 
     .rainbow {
       width: 239.06px;
       height: 203.09px;
       left: 0.99px;
-      top: 53px;
+      top: 13px;
       position: absolute;
     }
 
@@ -1432,16 +1438,38 @@ footer {
 /* スライダー関連のスタイル */
 .slide-container {
   position: relative;
-  max-width: 840px;
-  margin: 40px auto;
+  max-width: 100vw; /* 画面幅の30% */
+  margin: -440px auto 40px;
+}
+
+.slick-slide {
+  margin: 0 5px !important;
+  width: 60vw;
+}
+
+.slide {
+  position: relative;
 }
 
 .slide img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  height: 542px;
+  aspect-ratio: 4/3; /* 画像のアスペクト比を4:3に設定 */
   object-fit: cover;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .slide-prev,
@@ -1449,15 +1477,26 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(135deg, rgba(255, 199, 4, 0.9), rgba(255, 184, 0, 0.9)); /* 透過0.9のグラデーション背景 */
   width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  height: 80px;
+  border-radius: 15px;
   cursor: pointer;
   z-index: 100;
   font-size: 24px;
-  color: #013C60;
-  border: 1px solid #013C60;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 199, 4, 0.3); /* 影を追加 */
+  transition: all 0.3s ease; /* アニメーション */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-prev:hover,
+.slide-next:hover {
+  transform: translateY(-50%) scale(1.1); /* ホバー時に少し拡大 */
+  box-shadow: 0 6px 16px rgba(255, 199, 4, 0.4);
 }
 
 .slide-prev {
@@ -1494,11 +1533,11 @@ footer {
 }
 
 .slick-dots li button {
-  width: 16px;
-  height: 16px;
   padding: 0;
   margin: 0 6px;
-  border-radius: 50%;
+  border-radius: 8px; /* 横長四角にする */
+  width: 24px; /* 幅を広げる */
+  height: 8px; /* 高さを狭める */
   background: #ddd;
   border: none;
   font-size: 0;
@@ -1509,6 +1548,18 @@ footer {
   }
 }
 
+/* .slick-slide.slick-active {
+  transform: scale(1);
+}
+
+.slick-slide {
+  transform: scale(0.8);
+  transition: 1s ease;
+} */
+
 .slick-dots li.slick-active button {
-  background: #013C60;
+  background: #FFC704;
+  border-radius: 8px; /* 横長四角にする */
+  width: 24px; /* 幅を広げる */
+  height: 8px; /* 高さを狭める */
 }
