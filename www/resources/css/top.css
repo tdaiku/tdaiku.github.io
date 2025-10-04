@@ -1569,7 +1569,7 @@ footer {
   }
 
   .slide img {
-    width: 120%;
+    width: 100%;
     max-height: 90vh;
     height: auto;
     aspect-ratio: 3/4; /* 縦長のアスペクト比に設定 */
@@ -1579,7 +1579,7 @@ footer {
 
   .slide-prev,
   .slide-next {
-    display: none;
+    display: none !important;
   }
 
   .slick-dots {
@@ -1600,6 +1600,11 @@ footer {
     &:before {
       display: none !important;
     }
+  }
+
+  .slick-dots li {
+    height: 30px;
+    width: 50px;
   }
 
   .slick-dots li.slick-active button {
